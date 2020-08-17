@@ -128,7 +128,7 @@ class BiRotLineShooterView(ctx : Context) : View(ctx) {
         private var prev : BRLSNode? = null
 
         init {
-
+            addNeighbor()
         }
 
         fun addNeighbor() {
