@@ -208,4 +208,13 @@ class BiRotLineShooterView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity: Activity) : BiRotLineShooterView {
+            val view : BiRotLineShooterView = BiRotLineShooterView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
